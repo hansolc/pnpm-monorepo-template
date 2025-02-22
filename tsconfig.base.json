@@ -1,0 +1,31 @@
+/* 
+- compilerOptions: compilerOptions는 TypeScript 컴파일러의 동작을 제어하는 주요 설정을 담고 있습니다.
+- strict: TypeScript의 엄격한(strict) 모드를 활성화합니다.
+    - strictNullChecks, strictFunctionTypes, strictBindCallApply, strictPropertyInitialization, noImplicitAny, alwaysStrict 등의 모든 엄격한 타입 검사 옵션
+- esModuleInterop: CommonJS(require) 모듈과 ES Module(import)을 원활하게 상호 운용할 수 있도록 도와줍니다.
+- emitDecoratorMetadata: TypeScript가 데코레이터(Decorator) 메타데이터를 생성하도록 합니다.
+- experimentalDecorators: TypeScript에서 데코레이터(Decorator) 기능을 활성화여 클래스와 메서드 등에 @ 데코레이터를 사용할 수 있습니다.
+- noUnusedLocals: 사용되지 않는 지역 변수(Local Variable)에 대해 경고를 발생시킵니다.
+- skipLibCheck: node_modules 내부의 TypeScript 라이브러리(.d.ts 파일) 체크를 건너뜁니다.
+- sourceMap: TypeScript가 소스맵(.map) 파일을 생성하도록 설정합니다.
+    - 디버깅 시 Typescript 원본코드와 매칭하여 브라우저에서 디버깅이 가능합니다.
+- jsx: 
+    - "preserve": JSX를 그대로 유지 (컴파일 결과에 JSX 코드가 포함됨).
+    - "react": 기존 React.createElement 사용 방식 (React 16 이하).
+    - "react-jsx": React 17의 자동 JSX 변환 방식.
+- target: "es5": TypeScript가 컴파일된 JavaScript를 ES5 버전으로 변환하도록 설정합니다.
+*/
+
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "jsx": "react-jsx",
+    "target": "es5"
+  }
+}
