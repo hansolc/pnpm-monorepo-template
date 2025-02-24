@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "scaffolding:styled-react": "bash scripts/scaffolding/create-react-with-styled.sh"
   },
   "lint-staged": {
     "**/*.{js,ts,jsx,tsx}": [
