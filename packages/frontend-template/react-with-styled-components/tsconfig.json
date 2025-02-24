@@ -1,0 +1,7 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["styled-components"]
+  },
+  "include": ["src", "src/styles/styled.d.ts"]
+}
